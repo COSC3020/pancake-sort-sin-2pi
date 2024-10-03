@@ -34,3 +34,5 @@ answer to this markdown file.
 The runtime I have is $\Theta(n^2)$. I came to this conclusion, because for each for loop, the variables are being incremented n times, the loop will run n times. There are two loops, one is nested so $n * n = \Theta(n^2)$. For loops do not always have a time complexity of $\Theta(n)$, and two for loops won't always have a time complexity of $\Theta(n^2)$, but in this situation it does fall under the 'normal case'.
 
 As for the flips, for each item sorted there are two flips. So it should just end up being $2n$ in terms of flips. 2 flips for however many $n$ items are in the list.
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
