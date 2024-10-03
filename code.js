@@ -1,24 +1,22 @@
 function flip (array, n) {
-  let i = 0;
-  let mid = Math.floor(n / 2);
+  a1 = array.slice(0, n)
+  a1 = a1.reverse()
+  a1 = a1.concat(array.slice(n))
 
-  if (n >= array.length) {
-    array.reverse();
-    return array;
-  }
-
-  for (i; i < mid; i++) {
-    let tmp = array[i];
-    array[i] = array[n-1];
-    array[n-1] = tmp;
-  }
-
-  return array;
+  return a1
 }
 
 // Use only flip() here to manipulate the array
 function pancakeSort (array) {
-    let mi = array.length;
-    
-    return array
+  for (let outerloop = 0; outerloop < array.length; outerloop++) {
+    let max = outerloop
+    for (let innerloop = outerloop + 1; innerloop < array.length; innerloop++) {
+      if (array[innerloop] > array[max]) {
+        max = innerloop
+      }
+    }
+
+    array = flip(flip(array, max), max + 1)
+  }
+  return array
 }
