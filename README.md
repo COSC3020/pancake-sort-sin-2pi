@@ -31,7 +31,7 @@ answer to this markdown file.
 
 ## Answer
 
-The runtime I have is $\Theta(n^2)$. Each for loop is making $n$ comparisons. There are two loops, one is nested so $n * n = \Theta(n^2)$. For loops do not always have a time complexity of $\Theta(n)$, and two for loops won't always have a time complexity of $\Theta(n^2)$, but in this situation it does fall under the 'normal case'.
+The asymptotic complexity is $\Theta(n^2)$ in terms of comparisons made by pancakeSort(). Each for loop is making $n$ comparisons. There are two loops, one is nested so $n * n = \Theta(n^2)$. For loops do not always have a time complexity of $\Theta(n)$, and two for loops won't always have a time complexity of $\Theta(n^2)$, but in this situation it does fall under the 'normal case'.
 
 As for the flips, for each item sorted there are two flips. So it should just end up being $2n$ in terms of flips. 2 flips for however many $n$ items are in the list.
 
